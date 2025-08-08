@@ -13,13 +13,21 @@ const Layout = () => {
   return user ? (
     <div className="flex flex-col h-screen">
       {/* Navbar */}
-      <nav className="w-full px-6 py-3 bg-black/40 backdrop-blur-sm border-b border-white/10 flex items-center justify-between">
-        <img
-          className="cursor-pointer w-32 sm:w-44 rounded-2xl"
-          src={assets.scrlogo}
-          alt="Logo"
-          onClick={() => navigate('/')}
-        />
+      <nav className="w-full px-6 py-3 bg-black/40 backdrop-blur-lg flex items-center justify-between">
+<div
+  className="flex items-center gap-2 cursor-pointer"
+  onClick={() => navigate('/')} // Redirect to Hero route
+>
+  <img
+    src={assets.logo}
+    alt="logo"
+    className="w-8"
+  />
+  <span className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-400 via-pink-500 to-blue-500 bg-clip-text text-transparent">
+    AIMatrix
+  </span>
+</div>
+
         {sidebar ? (
           <X onClick={() => setSidebar(false)} className="h-6 w-6 text-white sm:hidden" />
         ) : (

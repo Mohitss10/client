@@ -63,14 +63,14 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        <h1 className="text-4xl sm:text-6xl md:text-8xl sm:mt-36 font-medium mx-auto leading-tight tracking-tight flex flex-wrap justify-center gap-x-3">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl sm:mt-26 font-bold mx-auto leading-tight tracking-tight flex flex-wrap justify-center gap-x-3">
           {headingLine1.map((word, idx) => (
             <motion.span key={idx} variants={wordVariant}>
               {word}
             </motion.span>
           ))}
         </h1>
-        <h1 className="text-4xl sm:text-6xl md:text-8xl font-medium mx-auto leading-tight tracking-tight flex flex-wrap justify-center gap-x-3 mt-2">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mx-auto leading-tight tracking-tight flex flex-wrap justify-center gap-x-3 mt-2">
           {headingLine2.map((word, idx) => (
             <motion.span key={idx} variants={wordVariant}>
               <span className={

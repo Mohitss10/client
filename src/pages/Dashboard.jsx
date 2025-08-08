@@ -36,7 +36,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="min-h-[85vh] lg:min-h-[70vh] w-full md:w-[70vw] lg:w-[80vw] border border-b-0 sm:border-b border-white/20 p-4 sm:p-6 bg-black/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl sm:mx-auto">
+    <div className="h-[87vh] lg:min-h-[70vh] w-full md:w-[70vw] lg:w-[80vw] border border-b-0 sm:border-b border-white/20 p-4 sm:p-2 bg-black/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl sm:mx-auto">
 
       {/* Card Section */}
       <div className="flex flex-wrap gap-4 justify-center mb-6">
@@ -76,7 +76,7 @@ const Dashboard = () => {
             Recent Creations
           </p>
 
-          <div className="space-y-3 text-slate-100 h-[80vh] sm:h-[40vh] md:mx-4 md:h-[55.7vh] overflow-y-auto pr-2 scrollbar-none">
+          <div className="space-y-3  text-slate-100 h-[58vh] sm:h-[40vh] md:mx-4 md:h-[55.7vh] overflow-y-auto pr-2 scrollbar-none">
             {creations.map((item) => (
               <CreationItem key={item.id} item={item} />
             ))}

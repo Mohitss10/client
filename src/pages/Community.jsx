@@ -71,9 +71,10 @@ const Community = () => {
 
   return (
     <div className="flex-1 h-full flex flex-col gap-4 text-slate-300">
-      <h1 className="text-xl font-semibold">Creations</h1>
 
       <div className="flex-1 bg-black/40 backdrop-blur-sm border border-white/10 rounded-2xl p-4 overflow-y-auto">
+              <h1 className="text-2xl font-semibold my-2">Creations</h1>
+
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {creations.map((creation, index) => (
             <div
